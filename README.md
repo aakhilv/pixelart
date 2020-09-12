@@ -1,5 +1,5 @@
 # pixelart
-The official repo for the Pixelart project. Contribute by forking this repository and make a pull request with your changes.
+The official repo for the Pixelart project. Contribute by forking this repository and making a pull request with your changes.
 
 Up to date demo: https://aakhilv.github.io/pixelart
 
