@@ -30,26 +30,31 @@ body {
 }
 
 #downloadbtn {
-  font-size: 100%;
+  background: dodgerblue;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
 }
 
-#gridlinesenable {
-  font-size: 100%;
+#gridtoggle {
+  background: limegreen;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
 }
 
-#gridlinesdisable {
-  font-size: 100%;
-  cursor: pointer;
-}
-
-#borderdisable {
-  font-size: 100%;
-  cursor: pointer;
-}
-
-#borderenable {
-  font-size: 100%;
+#bordertoggle {
+  background: limegreen;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
 }
