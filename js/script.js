@@ -8,18 +8,22 @@ function setPixelColor(pixel) {
   pixel.style.backgroundColor = penColor;
 }
 
-function removegrid() {
-  document.getElementById("art").style.borderSpacing = "0px";
+function gridtoggle() {
+  if (document.getElementById("art").style.borderSpacing !== "0px") {
+    document.getElementById("art").style.borderSpacing = "0px";
+    document.getElementById("gridtoggle").style.backgroundColor = "tomato";
+  } else if (document.getElementById("art").style.borderSpacing === "0px") {
+    document.getElementById("art").style.borderSpacing = "1px";
+    document.getElementById("gridtoggle").style.backgroundColor = "limegreen";
+  }
 }
 
-function enablegrid() {
-  document.getElementById("art").style.borderSpacing = "1px";
-}
-
-function removeborder() {
-  document.getElementById("art").style.borderStyle = "hidden";
-}
-
-function enableborder() {
-  document.getElementById("art").style.borderStyle = "solid";
+function bordertoggle() {
+  if (document.getElementById("art").style.borderStyle !== "hidden") {
+    document.getElementById("art").style.borderStyle = "hidden";
+    document.getElementById("bordertoggle").style.backgroundColor = "tomato";
+  } else if (document.getElementById("art").style.borderStyle === "hidden") {
+    document.getElementById("art").style.borderStyle = "solid";
+    document.getElementById("bordertoggle").style.backgroundColor = "limegreen";
+  }
 }
