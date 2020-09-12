@@ -24,8 +24,22 @@
     />
   </head>
   <body>
-    <span id="downloadbtn">
-      <p><i class="fas fa-download"></i> Download Image</p>
+    <span id="menubar">
+      <p id="downloadbtn"><i class="fas fa-download"></i> Download Image</p>
+      <p>
+        <b>Grid Lines</b><br /><span
+          id="gridlinesdisable"
+          onclick="removegrid()"
+          >Disable</span
+        >
+        | <span id="gridlinesenable" onclick="enablegrid()">Enable</span>
+      </p>
+      <p>
+        <b>Border</b><br /><span id="borderdisable" onclick="removeborder()"
+          >Disable</span
+        >
+        | <span id="borderenable" onclick="enableborder()">Enable</span>
+      </p>
     </span>
     <div id="palette">
       <div
@@ -757,18 +771,6 @@
         <div class="pixel" onclick="setPixelColor(this)"></div>
       </div>
     </div>
-
-    <script>
-      $("#downloadbtn").click(function() {
-        html2canvas($("#art"), {
-          onrendered: function(canvas) {
-            var a = document.createElement("a");
-            a.href = canvas.toDataURL("image/png");
-            a.download = "pixelart.png";
-            a.click();
-          }
-        });
-      });
-    </script>
+    <script src="js/download.js"></script>
   </body>
 </html>
