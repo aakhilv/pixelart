@@ -25,22 +25,18 @@
   </head>
   <body>
     <span id="menubar">
-      <p id="downloadbtn"><i class="fas fa-download"></i> Download Image</p>
-      <p>
-        <b>Grid Lines</b><br /><span
-          id="gridlinesdisable"
-          onclick="removegrid()"
-          >Disable</span
-        >
-        | <span id="gridlinesenable" onclick="enablegrid()">Enable</span>
-      </p>
-      <p>
-        <b>Border</b><br /><span id="borderdisable" onclick="removeborder()"
-          >Disable</span
-        >
-        | <span id="borderenable" onclick="enableborder()">Enable</span>
-      </p>
+      <button id="downloadbtn">
+        <i class="fas fa-download"></i> Download Image
+      </button>
+      <button id="gridtoggle" onclick="gridtoggle()">
+        <i class="fas fa-border-none"></i> Grid Lines
+      </button>
+      <button id="bordertoggle" onclick="bordertoggle()">
+        <i class="fas fa-border-all"></i> Border
+      </button>
     </span>
+    <br />
+    <br />
     <div id="palette">
       <div
         class="pen"
