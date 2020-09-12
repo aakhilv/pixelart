@@ -3,8 +3,29 @@
   <head>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+      integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7fe097db56.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="downloadbtn">
+      <p><i class="fas fa-download"></i> Download Image</p>
+    </div>
     <div id="palette">
       <div
         class="pen"
@@ -735,5 +756,18 @@
         <div class="pixel" onclick="setPixelColor(this)"></div>
       </div>
     </div>
+
+    <script>
+      $("#downloadbtn").click(function() {
+        html2canvas($("#art"), {
+          onrendered: function(canvas) {
+            var a = document.createElement("a");
+            a.href = canvas.toDataURL("image/png");
+            a.download = "pixelart.png";
+            a.click();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
