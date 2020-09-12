@@ -30,8 +30,26 @@ body {
 }
 
 #downloadbtn {
-  margin: 0px;
-  padding: 0px;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+#gridlinesenable {
+  font-size: 100%;
+  cursor: pointer;
+}
+
+#gridlinesdisable {
+  font-size: 100%;
+  cursor: pointer;
+}
+
+#borderdisable {
+  font-size: 100%;
+  cursor: pointer;
+}
+
+#borderenable {
   font-size: 100%;
   cursor: pointer;
 }
