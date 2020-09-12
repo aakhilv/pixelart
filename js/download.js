@@ -1,5 +1,6 @@
-$("#downloadbtn").click(function() {
-  html2canvas($("#art"), {
+function downloadbtn() {
+  var art = document.getElementById("art");
+  html2canvas(art, {
     onrendered: function(canvas) {
       var a = document.createElement("a");
       a.href = canvas.toDataURL("image/png");
@@ -7,4 +8,4 @@ $("#downloadbtn").click(function() {
       a.click();
     }
   });
-});
+}
