@@ -21,26 +21,8 @@ body {
   cursor: crosshair;
 }
 
-.pen {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
 #resetbtn {
   background: tomato;
-  border: none;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-#downloadbtn {
-  background: dodgerblue;
   border: none;
   color: white;
   padding: 10px;
@@ -61,6 +43,16 @@ body {
 
 #bordertoggle {
   background: limegreen;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#downloadbtn {
+  background: dodgerblue;
   border: none;
   color: white;
   padding: 10px;
