@@ -1,10 +1,5 @@
-var penColor = "black";
-
-function setPenColor(pen) {
-  penColor = pen;
-}
-
 function setPixelColor(pixel) {
+  var penColor = document.getElementById("pen").value;
   pixel.style.backgroundColor = penColor;
 }
 
@@ -33,4 +28,16 @@ function bordertoggle() {
     document.getElementById("art").style.borderStyle = "solid";
     document.getElementById("bordertoggle").style.backgroundColor = "limegreen";
   }
+}
+
+function downloadbtn() {
+  var art = document.getElementById("art");
+  html2canvas(art, {
+    onrendered: function(canvas) {
+      var a = document.createElement("a");
+      a.href = canvas.toDataURL("image/png");
+      a.download = "pixelart.png";
+      a.click();
+    }
+  });
 }
