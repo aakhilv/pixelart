@@ -6,4 +6,4 @@ The official repo for the Pixelart project. Contribute by forking this repositor
 **Up to date demo:** https://aakhilv.github.io/pixelart
 
 ## Showcase
-* **Pixelart Charmander** by [aakhilv](https://github.com/aakhilv) . [Click to view image](https://aakhilv.github.io/pixelart/examples/pixelartcharmander.png).
+* **Pixelart Charmander** by [aakhilv](https://github.com/aakhilv). [Click to view image](https://aakhilv.github.io/pixelart/examples/pixelartcharmander.png).
