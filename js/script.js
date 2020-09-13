@@ -8,6 +8,13 @@ function setPixelColor(pixel) {
   pixel.style.backgroundColor = penColor;
 }
 
+function resetbtn() {
+  var cols = document.getElementsByClassName("pixel");
+  for (i = 0; i < cols.length; i++) {
+    cols[i].style.backgroundColor = "white";
+  }
+}
+
 function gridtoggle() {
   if (document.getElementById("art").style.borderSpacing !== "0px") {
     document.getElementById("art").style.borderSpacing = "0px";
