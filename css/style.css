@@ -29,6 +29,16 @@ body {
   cursor: pointer;
 }
 
+#resetbtn {
+  background: tomato;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 #downloadbtn {
   background: dodgerblue;
   border: none;
