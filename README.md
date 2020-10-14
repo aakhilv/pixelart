@@ -7,3 +7,4 @@ The official repo for the Pixelart project. Contribute by forking this repositor
 
 ## Showcase
 * **Pixelart Charmander** by [aakhilv](https://github.com/aakhilv). [Click to view image](https://aakhilv.github.io/pixelart/examples/pixelartcharmander.png).
+* **Pixelart Stitch** by [aakhilv](https://github.com/aakhilv). [Click to view image](https://aakhilv.github.io/pixelart/examples/pixelartstitch.png).
