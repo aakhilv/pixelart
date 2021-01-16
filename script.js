@@ -38,6 +38,6 @@ function downloadbtn() {
             a.href = canvas.toDataURL("image/png");
             a.download = "pixelart.png";
             a.click();
-        };
+        }
     });
 };
